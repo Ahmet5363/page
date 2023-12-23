@@ -20,7 +20,7 @@ int sum3(int a, int b, int c) {
 
 }
 int dif(int a, int b, int c) {
-	return a - b - c;
+	return a - b - c ;
 }
 int mul(int a, int b, int c) {
 	return a * b*c;

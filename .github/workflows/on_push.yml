@@ -1,0 +1,17 @@
+name: github action Demo
+on:push
+jobs:
+  explore-github-action
+   runs-on: ubunto-latest
+   steps:
+      -name:print the triggering event
+       run: echo "the job was triggered by ${{ gihub.event_name}}."
+      -name:print the os of the runner
+       run: echo "this job is running on ${{runner.os}}server"
+      - name: Print the branch name that the workflow runs on
+        run: echo "🔎 The name of your branch is ${{ github.ref }} ."
+      - name: Check out repository code action
+        uses: actions/checkout@v4
+      - run: echo " Cloning The ${{ github.repository }} repository "
+      - name: List files in the repository
+        run: ls ${{ github.workspace }}
