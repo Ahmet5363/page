@@ -1,9 +1,10 @@
-name: hello
-on:push
+name: Hello
+
+on: push
  jobs:
-  hello
-   runs-on:ubunto-latest
+  hello:
+   runs-on: ubuntu-latest
    steps: 
-    -uses: action/checkut@v4
-    -name: print hello
-     run: echo "hello ahmet"
+    - uses: actions/checkout@v1
+    - name: print Hello
+      run : echo "hello ahmet"
