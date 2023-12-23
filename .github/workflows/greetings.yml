@@ -1,6 +1,6 @@
 name: Hello
 on: push
- jobs:
+jobs:
   hello:
    runs-on: ubuntu-latest
    steps: 
