@@ -1,5 +1,4 @@
 name: Hello
-
 on: push
  jobs:
   hello:
